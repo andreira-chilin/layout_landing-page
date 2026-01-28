@@ -124,9 +124,11 @@
   }
 
   &:hover &__number {
-    opacity: 1;
-    max-width: 200px; // Достатньо для номера
-    margin-right: 12px; // Відступ між номером та іконкою
+    @include on-desktop {
+      opacity: 1;
+      max-width: 200px; // Достатньо для номера
+      margin-right: 12px; // Відступ між номером та іконкою
+    }
   }
 
   &:hover .icon--phone {
