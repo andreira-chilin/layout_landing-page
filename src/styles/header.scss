@@ -18,6 +18,8 @@
 
     @include on-desktop {
       padding-block-end: 92px;
+
+      @include page-grid;
     }
 
     &-title {
@@ -27,6 +29,11 @@
 
       @include on-tablet {
         font-size: 48px;
+      }
+
+      @include on-desktop {
+        font-size: 56px;
+        grid-column: span 6;
       }
     }
   }
@@ -84,15 +91,15 @@
   }
 
   &--phone {
-    background-image: url(/src/img/icons/Icon-Phone-call.png);
+    background-image: url(/src/img/icons/Icon-Phone-call.svg);
   }
 
   &--burger {
     transition: 0.3s ease;
-    background-image: url(/src/img/icons/Icon-Burger-menu.png);
+    background-image: url(/src/img/icons/Icon-Burger-menu.svg);
 
     &:hover {
-      background-image: url(/src/img/icons/Icon-Burger-menu-hover.png);
+      background-image: url(/src/img/icons/Icon-Burger-menu-hover.svg);
     }
   }
 }

@@ -2,7 +2,7 @@
   overflow: auto; /* to scroll the menu if needed */
 
   @include on-desktop {
-    max-height: 720px;
+    max-height: 100vh;
   }
 
   &__top-bar {
@@ -33,13 +33,13 @@
     }
 
     @include on-desktop {
-      padding-inline: 120px; // Це поверне іконки на їхні місця
+      padding-inline: 120px;
     }
   }
 }
 
 .icon--close {
-  background-image: url(/src/img/icons/Icon-Close.png);
+  background-image: url(/src/img/icons/Icon-Close.svg);
 }
 
 .nav {
